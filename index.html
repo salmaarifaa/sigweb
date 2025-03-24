@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Web Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /> 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" ></script>
+    <style>
+        #map {
+    width: 1500px;
+    height: 700px;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Peta Lokasi Favorit di Kota Yogyakarta</h1>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map',{
+        center: [-7.79558, 110.36949],
+        zoom: 12
+        });
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+        L.marker([-7.81187,	110.36321])
+            .bindPopup('<b>Alun-alun Kidul</b><br>Alun-alun yang terletak di bagian selatan Keraton Yogyakarta. Sebuah area terbuka yang sering digunakan untuk berbagai kegiatan rekreasi dan tradisi. Pada malam hari, tempat ini ramai dengan penyewaan sepeda hias berlampu, pedagang makanan, dan hiburan lainnya. <br><img src="https://visitingjogja.jogjaprov.go.id/wp-content/uploads/2021/02/170694033_473241550780871_858495986566598445_n.jpg" width="200px">')
+            .addTo(map);
+        L.marker([-7.78929,	110.36331])
+            .bindPopup('<b>Stasiun Yogyakarta</b><br>Stasiun Yogyakarta atau disebut Stasiun Tugu merupakan stasiun utama di Yogyakarta. Dikenal dengan arsitekturnya yang bersejarah dan suasana yang khas, Stasiun Yogyakarta juga merupakan pintu gerbang utama bagi wisatawan yang ingin menjelajahi keindahan dan budaya Yogyakarta. <br><img src="https://assets.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p3/107/2024/11/06/Wilmar-Desrizal-1004274801-1344706202.jpg" width="200px">')
+            .addTo(map);
+        L.marker([-7.80537,	110.39706])
+            .bindPopup('<b>Kebun Binatang Gembira Loka</b><br>Didirikan pada tahun 1956, Gembira Loka Zoo merupakan salah satu destinasi wisata populer di Yogyakarta. Tempat ini menghadirkan berbagai macam satwa, termasuk mamalia, burung, reptil, maupun ikan dan berbagai fasilitas rekreasi seperti taman bermain, danau buatan dengan perahu, dan berbagai pertunjukan satwa.  <br><img src="https://liburananak.com/userfiles/post/5d83041637355.jpg" width="200px">')
+            .addTo(map);
+        L.marker([-7.79554,	110.38357        ])
+            .bindPopup('<b>Stadion Mandala Krida</b><br>Stadion Mandala Krida sebagai stadion multi-fungsi yang terletak di Yogyakarta, Indonesia ini digunakan untuk pertandingan sepak bola dan merupakan markas dari beberapa klub sepak bola lokal. Stadion ini juga sering digunakan untuk berbagai acara olahraga lainnya, konser, dan kegiatan besar lainnya. <br><img src="https://storage.googleapis.com/seo-cms/assets/sejarah_stadion_mandala_krida_423a1a3f4e/sejarah_stadion_mandala_krida_423a1a3f4e.jpg" width="200px">')
+            .addTo(map);
+        L.marker([-7.78639,	110.37616        ])
+            .bindPopup('<b>Ayam Bakar Pak Yanto</b><br>Ayam Bakar Pak Yanto adalah sebuah tempat makan yang terkenal di Yogyakarta dan dikenal dengan ayam bakar yang dimasak dengan bumbu khas, menghasilkan rasa yang gurih dan nikmat.<br><img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1562000896/fdyrarbfgccfcxpwaphv.jpg" width="200px">')
+            .addTo(map);
+        L.marker([-7.79742,	110.36536        ])
+            .bindPopup('<b>Malioboro</b><br>Malioboro adalah sebuah jalan ikonik di Yogyakarta, Indonesia, yang terkenal sebagai pusat perbelanjaan, wisata, dan kuliner. Jalan ini membentang dari Tugu Yogyakarta hingga ke perempatan Kantor Pos Yogyakarta.<br><img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/11/2023/12/22/Malioboro-Jogja-1024x683-2862696376.jpg" width="200px">')
+            .addTo(map);
+        L.marker([-7.80005,	110.35324        ])
+            .bindPopup('<b>Jogja National Museum</b><br>Jogja National Museum (JNM) adalah sebuah museum seni kontemporer yang berfungsi sebagai pusat seni dan budaya, juga sering menjadi tuan rumah berbagai pameran seni, instalasi, dan acara budaya. Terletak di kompleks bekas kampus Akademi Seni Rupa Indonesia (ASRI), JNM menyediakan ruang bagi seniman lokal maupun internasional untuk memamerkan karya mereka. <br><img src="https://asset-2.tstatic.net/jogja/foto/bank/images/JNM-Bloc.jpg" width="200px">')
+            .addTo(map);
+        L.marker([-7.81734,	110.38117        ])
+            .bindPopup('<b>Roka Ramen</b><br>Sebuah restoran yang populer di Yogyakarta yang menyajikan hidangan ramen khas Jepang. Tempat ini dikenal dengan ramen yang autentik, menggunakan kaldu yang kaya rasa dan mie yang dibuat dengan baik, serta berbagai topping seperti daging, telur, dan sayuran menjadi pilihan favorit bagi mereka yang ingin menikmati kuliner Jepang di Yogyakarta. <br><img src="https://dzglkev4c34xb.cloudfront.net/horego.com/umbulharjo/restaurant/roka-ramen/food/af1qipnpntt8xtcvhahi9jtfbcdhh-sxv4esoa3popd4.jpg" width="200px">')
+            .addTo(map);
+        L.marker([-7.80462,	110.35127        ])
+            .bindPopup('<b>Jolie</b><br>Salah satu pusat perbelanjaan fashion mulai dari pakaian sehari-hari hingga gaun pesta yang berada di Jalan Wirobrajan, Yogyakarta. Selain pakaian, toko ini juga menyediakan aksesori fashion seperti tas, sepatu, dekorasi rumah dan perhiasan. <br><img src="https://cdn.idntimes.com/content-images/community/2019/03/jolie-jogja-wirobrajan-surga-para-wanita-jogja1-b9e8d0fc3eabc20d5d29280de343cfea.jpg" width="200px">')
+            .addTo(map);
+        L.marker([-7.78357,	110.38667        ])
+            .bindPopup('<b>Empire XXI</b><br>Empire XXI adalah sebuah bioskop yang terletak di Jalan Solo, Yogyakarta. Dengan fasilitas yang modern dan nyaman, Empire XXI menawarkan pengalaman menonton film dengan teknologi audio dan visual terkini, serta berbagai pilihan film mulai dari film lokal hingga internasional. <br><img src="https://i0.wp.com/borobudurnews.com/wp-content/uploads/2020/10/Bioskopo-Empire-XXI-Jogja.jpg?fit=1028%2C573&ssl=1" width="200px">')
+            .addTo(map);
+
+    </script>
+</body>
+</html>
